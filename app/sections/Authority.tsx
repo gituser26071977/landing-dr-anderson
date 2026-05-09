@@ -130,6 +130,7 @@ export function Authority() {
                   &ldquo;Alta capacidade não impede sofrimento. Muitas vezes,
                   torna o sofrimento silencioso.&rdquo;
                 </p>
+              </div>
             </div>
           </div>
         </div>
