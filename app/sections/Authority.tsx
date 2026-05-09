@@ -81,7 +81,7 @@ export function Authority() {
             <ScrollReveal direction="right" delay={0.2} className="relative">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl z-10">
                 <Image
-                  src="/images/Eu_Back_T-Shirt.png"
+                  src="/images/Eu_Apenas_Eu.png"
                   alt="Dr. Anderson Holzwarth"
                   fill
                   className="object-cover"
