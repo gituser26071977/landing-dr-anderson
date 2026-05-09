@@ -3,6 +3,7 @@ import { SobreHero } from "./sections/SobreHero";
 import { SobreMedicine } from "./sections/SobreMedicine";
 import { SobreTech } from "./sections/SobreTech";
 import { SobreTeaching } from "./sections/SobreTeaching";
+import { SobrePhilosophy } from "./sections/SobrePhilosophy";
 import { SobreProjects } from "./sections/SobreProjects";
 import { SobreNavigation } from "./components/SobreNavigation";
 import { Footer } from "../sections/Footer";
@@ -20,6 +21,7 @@ export default function SobrePage() {
       <SobreMedicine />
       <SobreTech />
       <SobreTeaching />
+      <SobrePhilosophy />
       <SobreProjects />
       <Footer dark />
     </main>

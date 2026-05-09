@@ -27,7 +27,7 @@ export function SobreHero() {
               A medicina sempre foi apenas <span className="italic text-white/50 text-4xl md:text-6xl block mt-2">parte do processo.</span>
             </h1>
             <p className="text-xl text-white/60 leading-relaxed max-w-xl mb-12">
-              Médico, pesquisador, desenvolvedor de sistemas, especialista em IA e criador multidisciplinar. Uma busca contínua pela integração entre ciência, tecnologia e criatividade.
+              Médico, pesquisador, desenvolvedor de sistemas, especialista em IA e criador multidisciplinar. Entusiasta de sustentabilidade com décadas de prática real.
             </p>
           </motion.div>
 
