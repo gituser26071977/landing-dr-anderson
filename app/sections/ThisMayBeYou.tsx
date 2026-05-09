@@ -39,8 +39,9 @@ export function ThisMayBeYou() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-white leading-tight mb-6">
-              Isso pode ser você —{" "}
-              <span className="text-[#C9A962]">ou seu filho</span>
+              Veja se você{" "}
+              <span className="text-[#C9A962]">(ou seu filho)</span>
+              {" "}tem essas características.
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "regulação emocional",
     "ansiedade generalizada",
     "insônia crônica",
-    "pensamento hiperativo",
+    "pensamento acelerado",
     "superdotação infantil",
     "altas habilidades crianças",
     "Aracaju",

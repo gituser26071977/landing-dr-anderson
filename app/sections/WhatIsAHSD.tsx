@@ -7,7 +7,7 @@ import { Sparkles, Brain, Heart, Moon, Gauge } from "lucide-react";
 const caracteristicas = [
   {
     icon: Brain,
-    title: "Pensamento hiperativo",
+    title: "Pensamento acelerado",
     description:
       "A mente processa constantemente, mesmo quando o corpo precisa descansar.",
   },
@@ -66,7 +66,7 @@ export function WhatIsAHSD() {
                 Em adultos e crianças, o perfil de altas habilidades pode
                 coexistir com{" "}
                 <strong className="text-[#1A1A1A] font-medium">
-                  ansiedade persistente, insônia, pensamento hiperativo,
+                  ansiedade persistente, insônia, pensamento acelerado,
                   perfeccionismo extremo e dificuldade de regulação emocional
                 </strong>
                 .
