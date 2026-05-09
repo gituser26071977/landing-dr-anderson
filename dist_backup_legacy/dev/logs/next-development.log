@@ -1,0 +1,50 @@
+[00:00:01.134] Server  LOG     ✓ Ready in 795ms
+[00:00:38.417] Server  LOG     ○ Compiling / ...
+[00:00:40.945] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.652] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <RootLayout>
+                        <html lang="pt-BR" className="scroll-smooth">
+                          <body
++                           className="cormorant_garamond_c542a51a-module__MzsREa__variable inter_64ec53c6-module__Auc..."
+-                           className="cormorant_garamond_c542a51a-module__MzsREa__variable inter_64ec53c6-module__Auc..."
+                          >
+                  ...
+
+[00:04:18.470] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:16.350] Server  LOG     ✓ Compiled in 1076ms
+[00:06:56.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:52.380] Server  LOG     ✓ Compiled in 289ms
+[00:11:41.024] Server  LOG     ✓ Compiled in 196ms
+[00:11:42.925] Server  LOG     ✓ Compiled in 102ms
+[00:11:59.935] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:10.194] Server  LOG     ✓ Compiled in 236ms
+[00:15:12.080] Server  LOG     ✓ Compiled in 110ms
+[00:15:14.127] Server  LOG     ✓ Compiled in 140ms
+[00:15:22.654] Server  LOG     ✓ Compiled in 237ms
+[00:17:30.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

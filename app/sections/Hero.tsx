@@ -1,0 +1,117 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { ArrowRight, ChevronDown } from "lucide-react";
+import { WHATSAPP_LINK } from "@/lib/constants";
+
+export function Hero() {
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-[100dvh] flex items-center bg-gradient-to-br from-[#FAFAF8] to-[#F0F2EE] pt-24 sm:pt-28"
+    >
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute top-20 left-10 w-96 h-96 rounded-full bg-[#2D5A3D] blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-[30rem] h-[30rem] rounded-full bg-[#4A7C5C] blur-3xl" />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12 lg:py-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1, ease: [0.4, 0, 0.2, 1] }}
+            className="mb-6"
+          >
+            <span className="inline-block text-xs sm:text-sm font-medium tracking-[0.25em] text-[#4A7C5C] uppercase mb-6">
+              Atendimento Médico para Mentes Intensas
+            </span>
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#1A1A1A] leading-[1.15] tracking-tight">
+              Quando a mente nunca{" "}
+              <span className="text-[#2D5A3D]">desacelera</span>, o sofrimento
+              se torna invisível
+            </h1>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
+            className="text-base sm:text-lg lg:text-xl text-[#4A4A4A] leading-relaxed mb-4 max-w-3xl mx-auto"
+          >
+            Atendimento médico especializado em adultos e crianças com{" "}
+            <strong className="text-[#1A1A1A] font-medium">
+              altas habilidades, intensidade emocional, ansiedade persistente e
+              insônia
+            </strong>
+            .
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: [0.4, 0, 0.2, 1] }}
+            className="text-base sm:text-lg text-[#7A7A7A] leading-relaxed mb-10 max-w-2xl mx-auto"
+          >
+            Uma abordagem que entende a intensidade mental — e que não tenta
+            suprimir o que deveria ser compreendido.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.55, ease: [0.4, 0, 0.2, 1] }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#2D5A3D] hover:bg-[#4A7C5C] text-white px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg group flex items-center justify-center"
+            >
+              Agendar Avaliação
+              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </a>
+            <button
+              onClick={() => scrollToSection("#identificacao")}
+              className="border-2 border-[#2D5A3D] text-[#2D5A3D] hover:bg-[#2D5A3D] hover:text-white px-8 py-4 rounded-lg font-medium text-base transition-all duration-300"
+            >
+              Ver os Sinais
+            </button>
+          </motion.div>
+        </div>
+      </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <button
+          onClick={() => scrollToSection("#ahsd")}
+          className="flex flex-col items-center text-[#7A7A7A] hover:text-[#2D5A3D] transition-colors"
+          aria-label="Rolar para baixo"
+        >
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <ChevronDown className="w-6 h-6" />
+          </motion.div>
+        </button>
+      </motion.div>
+    </section>
+  );
+}

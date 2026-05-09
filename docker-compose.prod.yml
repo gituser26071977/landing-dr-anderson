@@ -1,0 +1,19 @@
+services:
+  landing-dr-anderson:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: landing-dr-anderson
+    restart: always
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dranderson.rule=Host(`dranderson.aracannabis.com.br`) || Host(`www.dranderson.aracannabis.com.br`)"
+      - "traefik.http.routers.dranderson.entrypoints=websecure"
+      - "traefik.http.routers.dranderson.tls.certresolver=letsencrypt"
+      - "traefik.http.services.dranderson.loadbalancer.server.port=3000"
+
+networks:
+  web:
+    external: true
