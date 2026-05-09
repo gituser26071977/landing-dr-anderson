@@ -21,7 +21,6 @@ export default function Home() {
       <NavigationBar />
       <Hero />
       <WhatIsAHSD />
-      <Identification />
       <ChildrenIdentification />
       <ThisMayBeYou />
       <Authority />

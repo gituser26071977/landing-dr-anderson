@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ScrollReveal } from "../components/ScrollReveal";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, User, Users2 } from "lucide-react";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const sinaisAdultos = [
@@ -61,9 +61,14 @@ export function ThisMayBeYou() {
             transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
           >
-            <h3 className="font-heading text-2xl text-white mb-6">
-              Se você é adulto
-            </h3>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-[#C9A962]/20 flex items-center justify-center">
+                <User className="w-6 h-6 text-[#C9A962]" />
+              </div>
+              <h3 className="font-heading text-2xl text-white">
+                Se você é adulto
+              </h3>
+            </div>
             <ul className="space-y-4">
               {sinaisAdultos.map((sinal, index) => (
                 <motion.li
@@ -96,9 +101,14 @@ export function ThisMayBeYou() {
             transition={{ duration: 0.7, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
             className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
           >
-            <h3 className="font-heading text-2xl text-white mb-6">
-              Se você é pai ou mãe
-            </h3>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-12 h-12 rounded-xl bg-[#C9A962]/20 flex items-center justify-center">
+                <Users2 className="w-6 h-6 text-[#C9A962]" />
+              </div>
+              <h3 className="font-heading text-2xl text-white">
+                Se você é pai ou mãe
+              </h3>
+            </div>
             <ul className="space-y-4">
               {sinaisCriancas.map((sinal, index) => (
                 <motion.li

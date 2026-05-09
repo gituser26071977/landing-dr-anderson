@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { ScrollReveal } from "../components/ScrollReveal";
-import { Stethoscope, Microscope, HeartPulse, Lightbulb } from "lucide-react";
+import { Stethoscope, Microscope, HeartPulse, Lightbulb, Heart, ClipboardCheck, Users } from "lucide-react";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const credenciais = [
@@ -27,8 +28,8 @@ export function Authority() {
   return (
     <section id="sobre" className="py-20 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div>
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div className="lg:col-span-7">
             <ScrollReveal>
               <span className="inline-block text-sm font-medium tracking-[0.2em] text-[#4A7C5C] uppercase mb-4">
                 Quem Cuida
@@ -80,8 +81,37 @@ export function Authority() {
             </ScrollReveal>
           </div>
 
-          <ScrollReveal direction="right" delay={0.2}>
-            <div className="bg-[#2D5A3D] rounded-2xl p-8 lg:p-10">
+          <div className="lg:col-span-5">
+            <ScrollReveal direction="right" delay={0.2} className="relative">
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl z-10">
+                <Image
+                  src="/images/about_doctor.png"
+                  alt="Dr. Anderson Holzwarth"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-6 w-full h-full bg-[#F0F2EE] rounded-2xl -z-10 translate-x-4 translate-y-4" />
+              <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-[#C9A962] rounded-2xl -z-10 -translate-x-2 -translate-y-2" />
+              
+              <div className="absolute -bottom-4 -left-4 bg-white p-6 rounded-xl shadow-lg z-20 border border-[#F0F2EE]">
+                <div className="space-y-4">
+                  {credenciais.slice(0, 3).map((item, index) => (
+                    <div key={index} className="flex items-center gap-3">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F0F2EE] flex items-center justify-center">
+                        <item.icon className="w-4 h-4 text-[#2D5A3D]" />
+                      </div>
+                      <span className="text-xs font-medium text-[#4A4A4A] whitespace-nowrap">
+                        {item.text}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <div className="mt-12 lg:mt-16 bg-[#2D5A3D] rounded-2xl p-8 shadow-xl">
               <div className="space-y-6">
                 {credenciais.map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
