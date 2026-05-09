@@ -98,7 +98,7 @@ export function Hero() {
           >
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image 
-                src="/images/hero_bg_image.png" 
+                src="/images/hero_alt_2.png" 
                 alt="Profissional com clareza mental" 
                 fill 
                 className="object-cover"
