@@ -21,7 +21,7 @@ export function About() {
           <ScrollReveal direction="left" className="relative">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/1000007193.jpg"
+                src="/images/about_doctor.png"
                 alt="Dr. Anderson Holzwarth em atendimento humanizado"
                 fill
                 className="object-cover"

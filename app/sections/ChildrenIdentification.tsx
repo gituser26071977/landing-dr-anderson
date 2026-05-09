@@ -13,6 +13,7 @@ import {
   Flame,
 } from "lucide-react";
 import { WHATSAPP_LINK } from "@/lib/constants";
+import Image from "next/image";
 
 const sinaisCriancas = [
   {
@@ -69,25 +70,39 @@ export function ChildrenIdentification() {
   return (
     <section id="criancas" className="py-20 lg:py-32 bg-[#FAFAF8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <ScrollReveal>
-            <span className="inline-block text-sm font-medium tracking-[0.2em] text-[#4A7C5C] uppercase mb-4">
-              Sinais em Crianças e Adolescentes
-            </span>
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1A1A1A] leading-tight mb-6">
-              Se você é pai ou mãe,{" "}
-              <span className="text-[#2D5A3D]">
-                pode reconhecer isso no seu filho:
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
+          <div className="text-left max-w-2xl">
+            <ScrollReveal>
+              <span className="inline-block text-sm font-medium tracking-[0.2em] text-[#4A7C5C] uppercase mb-4">
+                Sinais em Crianças e Adolescentes
               </span>
-            </h2>
-          </ScrollReveal>
-          <ScrollReveal delay={0.2}>
-            <p className="text-lg text-[#4A4A4A] leading-relaxed">
-              Nem sempre é comportamento — muitas vezes é um funcionamento
-              diferente que precisa de compreensão, não apenas de correção.
-            </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1A1A1A] leading-tight mb-6">
+                Se você é pai ou mãe,{" "}
+                <span className="text-[#2D5A3D]">
+                  pode reconhecer isso no seu filho:
+                </span>
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <p className="text-lg text-[#4A4A4A] leading-relaxed">
+                Nem sempre é comportamento — muitas vezes é um funcionamento
+                diferente que precisa de compreensão, não apenas de correção.
+              </p>
+            </ScrollReveal>
+          </div>
+          
+          <ScrollReveal direction="right" delay={0.3} className="hidden lg:block relative">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <Image 
+                src="/images/child_focus.png" 
+                alt="Criança com altas habilidades focada" 
+                fill 
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#C9A962]/20 rounded-full blur-2xl -z-10"></div>
           </ScrollReveal>
         </div>
 
