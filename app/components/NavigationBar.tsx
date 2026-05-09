@@ -14,6 +14,7 @@ const navLinks = [
   { href: "#proposta", label: "Proposta" },
   { href: "#cannabis", label: "Cannabis" },
   { href: "#faq", label: "Dúvidas" },
+  { href: "/sobre", label: "Trajetória" },
 ];
 
 export function NavigationBar() {

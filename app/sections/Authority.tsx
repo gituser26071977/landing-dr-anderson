@@ -65,14 +65,20 @@ export function Authority() {
               </p>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.5}>
+            <ScrollReveal delay={0.5} className="flex flex-col sm:flex-row gap-4">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-[#2D5A3D] hover:bg-[#4A7C5C] text-white px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300"
               >
-                Conhecer Minha História
+                Agendar Consulta
+              </a>
+              <a
+                href="/sobre"
+                className="inline-flex items-center justify-center border border-[#2D5A3D] text-[#2D5A3D] hover:bg-[#2D5A3D] hover:text-white px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300"
+              >
+                Conhecer Trajetória & Projetos
               </a>
             </ScrollReveal>
           </div>

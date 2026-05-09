@@ -16,7 +16,7 @@ const navLinks = [
   { href: "#contato", label: "Contato" },
 ];
 
-export function Footer() {
+export function Footer({ dark = false }: { dark?: boolean }) {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
@@ -25,7 +25,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-[#1A1A1A] text-white">
+    <footer className={`${dark ? "bg-black" : "bg-[#1A1A1A]"} text-white border-t border-white/5`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-16 lg:py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           <div className="lg:col-span-1">
