@@ -11,10 +11,6 @@ const credenciais = [
     text: "Mais de 20 anos de experiência médica",
   },
   {
-    icon: Microscope,
-    text: "Pesquisador em cannabis medicinal e AH/SD",
-  },
-  {
     icon: HeartPulse,
     text: "Vivência pessoal com altas habilidades e superdotação",
   },
@@ -44,7 +40,7 @@ export function Authority() {
             <ScrollReveal delay={0.2}>
               <p className="text-lg text-[#4A4A4A] leading-relaxed mb-6">
                 Sou médico há mais de 20 anos. Atuo com abordagem baseada em
-                evidências científicas e sou pesquisador na área. Mas há outra
+                evidências científicas e acolhimento humanizado. Mas há outra
                 dimensão que define minha prática: também sou uma pessoa com
                 altas habilidades e superdotação.
               </p>
@@ -85,7 +81,7 @@ export function Authority() {
             <ScrollReveal direction="right" delay={0.2} className="relative">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl z-10">
                 <Image
-                  src="/images/about_doctor.png"
+                  src="/images/Eu_Back_T-Shirt.png"
                   alt="Dr. Anderson Holzwarth"
                   fill
                   className="object-cover"
