@@ -91,20 +91,6 @@ export function Authority() {
               <div className="absolute -bottom-6 -right-6 w-full h-full bg-[#F0F2EE] rounded-2xl -z-10 translate-x-4 translate-y-4" />
               <div className="absolute -top-6 -left-6 w-32 h-32 border-2 border-[#C9A962] rounded-2xl -z-10 -translate-x-2 -translate-y-2" />
               
-              <div className="absolute -bottom-4 -left-4 bg-white p-6 rounded-xl shadow-lg z-20 border border-[#F0F2EE]">
-                <div className="space-y-4">
-                  {credenciais.slice(0, 3).map((item, index) => (
-                    <div key={index} className="flex items-center gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#F0F2EE] flex items-center justify-center">
-                        <item.icon className="w-4 h-4 text-[#2D5A3D]" />
-                      </div>
-                      <span className="text-xs font-medium text-[#4A4A4A] whitespace-nowrap">
-                        {item.text}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
             </ScrollReveal>
 
             <div className="mt-12 lg:mt-16 bg-[#2D5A3D] rounded-2xl p-8 shadow-xl">
