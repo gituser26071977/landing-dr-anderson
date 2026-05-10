@@ -21,7 +21,7 @@ export function SobreProjects() {
           <ScrollReveal>
             <span className="text-[#C9A962] text-xs tracking-[0.3em] uppercase block mb-8">Oficina & Criação</span>
             <h2 className="font-heading text-4xl md:text-6xl font-light mb-8">
-              Mente inquienta, <span className="text-white/40 italic">mãos ocupadas.</span>
+              Mente inquieta, <span className="text-white/40 italic">mãos ocupadas.</span>
             </h2>
             <p className="text-white/60 leading-relaxed text-lg max-w-2xl mx-auto">
               Fora do consultório e do terminal, a curiosidade toma forma física. Da marcenaria ao design naval, cada projeto é um exercício de solução de problemas e expressão criativa.
