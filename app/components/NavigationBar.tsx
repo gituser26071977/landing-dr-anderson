@@ -7,10 +7,11 @@ import { WHATSAPP_LINK } from "@/lib/constants";
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
-  { href: "#ahsd", label: "AH/SD" },
-  { href: "#identificacao", label: "Adultos" },
-  { href: "#criancas", label: "Crianças" },
+  { href: "#identificacao", label: "Sinais" },
+  { href: "#sinais-adultos", label: "Adultos" },
   { href: "#sobre", label: "O Médico" },
+  { href: "#ahsd", label: "AH/SD" },
+  { href: "#criancas", label: "Crianças" },
   { href: "#proposta", label: "Proposta" },
   { href: "#cannabis", label: "Cannabis" },
   { href: "#faq", label: "Dúvidas" },

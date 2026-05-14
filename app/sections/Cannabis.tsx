@@ -9,13 +9,13 @@ const indicacoes = [
     icon: Brain,
     title: "Ansiedade",
     description:
-      "Modulação da resposta de alarme constante em perfis clínicos selecionados, como coadjuvante.",
+      "Modulação da resposta de alarme constante em perfis clínicos selecionados, como parte de uma estratégia terapêutica individualizada.",
   },
   {
     icon: Moon,
     title: "Insônia",
     description:
-      "Promoção de sono mais reparador quando há indicação individualizada e acompanhamento médico.",
+      "Promoção de sono mais reparador quando há indicação individualizada e acompanhamento médico contínuo.",
   },
   {
     icon: Heart,
@@ -33,26 +33,26 @@ export function Cannabis() {
           <div>
             <ScrollReveal>
               <span className="inline-block text-sm font-medium tracking-[0.2em] text-[#4A7C5C] uppercase mb-4">
-                Uma Ferramenta Entre Outras
+                Uma Ferramenta Terapêutica Entre Outras
               </span>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1A1A1A] leading-tight mb-6">
-                Cannabis medicinal: quando clinicamente indicada
+                Cannabis medicinal baseada em evidências
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
               <p className="text-xl text-[#2D5A3D] font-medium mb-6">
-                Não é para todos, mas pode ser um dos pilares do manejo
-                farmacológico.
+                Quando clinicamente indicada, como parte de uma estratégia
+                terapêutica individualizada.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <p className="text-lg text-[#4A4A4A] leading-relaxed mb-6">
                 A cannabis medicinal pode fazer parte do tratamento quando há
                 indicação clínica adequada. Minha atuação nessa área é
-                estritamente baseada em evidências científicas e em mais de duas
-                décadas de prática médica.
+                estritamente baseada em evidências científicas, pós-graduações
+                específicas e mais de duas décadas de prática médica.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>

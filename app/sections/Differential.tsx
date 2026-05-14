@@ -8,15 +8,15 @@ import { WHATSAPP_LINK } from "@/lib/constants";
 const diferenciais = [
   {
     icon: UserCheck,
-    title: "Consulta individualizada",
+    title: "Avaliação individualizada",
     description:
-      "Cada pessoa — e cada criança — é única. O plano é construído a partir da história individual, não de protocolos rígidos.",
+      "Cada pessoa — e cada criança — é única. O plano terapêutico é construído a partir da história clínica individual, não de protocolos prontos.",
   },
   {
     icon: Ear,
     title: "Escuta qualificada",
     description:
-      "Tempo e atenção para entender o que está por trás dos sintomas, não apenas registrá-los em prontuário.",
+      "Tempo e atenção para entender o que está por trás dos sintomas. Tratamentos individualizados começam com escuta verdadeira.",
   },
   {
     icon: RefreshCw,
@@ -26,9 +26,9 @@ const diferenciais = [
   },
   {
     icon: FlaskConical,
-    title: "Integração ciência + vivência",
+    title: "Medicina baseada em evidências",
     description:
-      "Conhecimento técnico combinado com a compreensão de quem já passou por isso. Teoria e experiência no mesmo lugar.",
+      "Conhecimento técnico sólido combinado com experiência clínica. Ciência e humanidade no mesmo lugar.",
   },
 ];
 
@@ -94,7 +94,7 @@ export function Differential() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#C9A962] hover:bg-[#B8984F] text-[#1A1A1A] px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 hover:-translate-y-0.5 group"
           >
-            Agendar uma Consulta
+            Conversar sobre meu caso
             <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </a>
         </ScrollReveal>

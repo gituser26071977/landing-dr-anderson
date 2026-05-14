@@ -34,21 +34,20 @@ export function ThisMayBeYou() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal>
             <span className="inline-block text-sm font-medium tracking-[0.2em] text-[#C9A962] uppercase mb-4">
-              Autoidentificação
+              Reconhecimento
             </span>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-white leading-tight mb-6">
-              Veja se você{" "}
-              <span className="text-[#C9A962]">(ou seu filho)</span>
-              {" "}tem essas características.
+              Nem sempre o problema é falta de força.{" "}
+              <span className="text-[#C9A962]">Às vezes, é exaustão acumulada.</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
             <p className="text-lg text-white/80 leading-relaxed">
-              A primeira etapa do cuidado é reconhecer o padrão. Muitos
-              pacientes chegam após anos de sofrimento silencioso, sem saber que
-              seu funcionamento mental tinha um nome.
+              Tem dores que ninguém vê, mas a pessoa sente todos os dias. A primeira
+              etapa do cuidado é reconhecer o padrão — sem julgamento, sem
+              simplificações.
             </p>
           </ScrollReveal>
         </div>
@@ -142,7 +141,7 @@ export function ThisMayBeYou() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#C9A962] hover:bg-[#B8984F] text-[#1A1A1A] px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg group"
           >
-            Falar sobre Meu Caso
+            Conversar sobre meu caso
             <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </a>
           <p className="mt-4 text-white/60 text-sm">

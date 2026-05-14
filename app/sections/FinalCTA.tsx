@@ -63,7 +63,7 @@ export function FinalCTA() {
                 className="border-2 border-[#2D5A3D] text-[#2D5A3D] hover:bg-[#2D5A3D] hover:text-white px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 flex items-center justify-center"
               >
                 <MessageCircle className="mr-2 w-5 h-5" />
-                Falar no WhatsApp
+                Conversar sobre meu caso
               </a>
             </motion.div>
           </div>

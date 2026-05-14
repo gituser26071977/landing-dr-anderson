@@ -7,8 +7,8 @@ import { WHATSAPP_LINK, DISPLAY_PHONE } from "@/lib/constants";
 const navLinks = [
   { href: "#inicio", label: "Início" },
   { href: "#ahsd", label: "O que é AH/SD" },
-  { href: "#identificacao", label: "Sinais em Adultos" },
-  { href: "#criancas", label: "Sinais em Crianças" },
+  { href: "#identificacao", label: "Sinais" },
+  { href: "#sinais-adultos", label: "Adultos" },
   { href: "#sobre", label: "Sobre" },
   { href: "#proposta", label: "Proposta" },
   { href: "#cannabis", label: "Cannabis Medicinal" },
@@ -41,7 +41,8 @@ export function Footer({ dark = false }: { dark?: boolean }) {
             </a>
             <p className="text-white/60 mb-6 leading-relaxed">
               Atendimento médico especializado para mentes intensas — adultos e
-              crianças com AH/SD, ansiedade e insônia.
+              crianças com AH/SD, ansiedade e insônia. Cannabis medicinal
+              quando clinicamente indicada.
             </p>
             <a
               href={WHATSAPP_LINK}

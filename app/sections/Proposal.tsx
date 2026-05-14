@@ -65,10 +65,9 @@ export function Proposal() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1A1A1A] leading-tight mb-6">
-              O foco não é corrigir —{" "}
+              O objetivo não é apenas tratar sintomas —{" "}
               <span className="text-[#2D5A3D]">
-                é ajudar a regular, compreender e viver melhor com essa
-                intensidade
+                é devolver qualidade de vida
               </span>
             </h2>
           </ScrollReveal>
@@ -152,7 +151,7 @@ export function Proposal() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-[#2D5A3D] hover:bg-[#4A7C5C] text-white px-8 py-4 rounded-lg font-medium text-base transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg group"
           >
-            Conhecer a Proposta Completa
+            Iniciar Acompanhamento
             <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </a>
         </ScrollReveal>

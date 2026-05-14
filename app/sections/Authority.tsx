@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ScrollReveal } from "../components/ScrollReveal";
-import { Stethoscope, Microscope, HeartPulse, Lightbulb, Heart, ClipboardCheck, Users } from "lucide-react";
+import { Stethoscope, Microscope, HeartPulse, Lightbulb, Heart, ClipboardCheck, Users, GraduationCap, Activity } from "lucide-react";
 import { WHATSAPP_LINK } from "@/lib/constants";
 
 const credenciais = [
@@ -11,12 +11,24 @@ const credenciais = [
     text: "Mais de 20 anos de experiência médica",
   },
   {
-    icon: HeartPulse,
-    text: "Vivência pessoal com altas habilidades e superdotação",
+    icon: Activity,
+    text: "Atuação em terapia intensiva e medicina hospitalar",
+  },
+  {
+    icon: Microscope,
+    text: "Experiência em ultrassonografia e diagnóstico",
+  },
+  {
+    icon: GraduationCap,
+    text: "Pós-graduações em Cannabis Medicinal",
   },
   {
     icon: Lightbulb,
-    text: "Abordagem integrativa que considera mente, emoção e sono",
+    text: "Abordagem integrativa baseada em evidências",
+  },
+  {
+    icon: Heart,
+    text: "Escuta humanizada e avaliação individualizada",
   },
 ];
 
@@ -40,28 +52,26 @@ export function Authority() {
             <ScrollReveal delay={0.2}>
               <p className="text-lg text-[#4A4A4A] leading-relaxed mb-6">
                 Sou médico há mais de 20 anos. Atuo com abordagem baseada em
-                evidências científicas e acolhimento humanizado. Mas há outra
-                dimensão que define minha prática: também sou uma pessoa com
-                altas habilidades e superdotação.
+                evidências científicas e acolhimento humanizado. Minha trajetória
+                inclui atuação em terapia intensiva, ultrassonografia e medicina
+                multidisciplinar — uma base técnica sólida que sustenta cada
+                decisão clínica.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="text-lg text-[#4A4A4A] leading-relaxed mb-6">
-                Vivi por décadas os desafios desse perfil. A intensidade
-                mental. A sensação de inadequação em ambientes comuns. A
-                dificuldade de desacelerar. O sono que não restaura. Aprendi na
-                pele que mentes assim precisam de abordagens diferentes —
-                técnicas, sim, mas também uma escuta que reconheça a
-                complexidade antes de tentar simplificá-la.
+                Há outra dimensão que define minha prática: também sou uma pessoa
+                com altas habilidades e superdotação. Vivi por décadas os desafios
+                desse perfil. A intensidade mental. A dificuldade de desacelerar.
+                O sono que não restaura. Isso me permite oferecer uma escuta que
+                reconhece a complexidade antes de tentar simplificá-la.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4}>
               <p className="text-lg text-[#4A4A4A] leading-relaxed mb-8">
-                Há menos de um ano, iniciei uma abordagem integrativa
-                específica para adultos e crianças com AH/SD. Para mim, isso
-                representou um novo começo de vida. Hoje, ofereço esse mesmo
-                tipo de acolhimento e estrutura clínica para quem vive o que eu
-                também vivi — e para os pais que buscam orientação.
+                O objetivo não é apenas tratar sintomas — é devolver qualidade de
+                vida. Cada paciente carrega uma história clínica única, e cada
+                tratamento é construído a partir dela.
               </p>
             </ScrollReveal>
 
@@ -78,7 +88,7 @@ export function Authority() {
                 href="/sobre"
                 className="inline-flex items-center justify-center border border-[#2D5A3D] text-[#2D5A3D] hover:bg-[#2D5A3D] hover:text-white px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300"
               >
-                Conhecer Trajetória & Projetos
+                Conhecer Trajetória Completa
               </a>
             </ScrollReveal>
           </div>

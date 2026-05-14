@@ -20,13 +20,13 @@ const sinais = [
     icon: Brain,
     title: "Mente acelerada o tempo todo",
     description:
-      "A cabeça não para, mesmo quando o corpo precisa descansar. Pensamentos em loop constante.",
+      "Quando a mente vive em alerta, o descanso deixa de existir. Pensamentos em loop constante, mesmo quando o corpo pede pausa.",
   },
   {
     icon: Zap,
     title: "Dificuldade de desligar",
     description:
-      "Ideias, análises e preocupações continuam em loop, especialmente à noite, roubando o sono.",
+      "Ideias, análises e preocupações continuam em loop, especialmente à noite, roubando o sono e a recuperação.",
   },
   {
     icon: Frown,
@@ -74,7 +74,7 @@ const sinais = [
 
 export function Identification() {
   return (
-    <section id="identificacao" className="py-20 lg:py-32 bg-white">
+    <section id="sinais-adultos" className="py-20 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal>
@@ -84,14 +84,15 @@ export function Identification() {
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-normal text-[#1A1A1A] leading-tight mb-6">
-              Se você é adulto com AH/SD,{" "}
-              <span className="text-[#2D5A3D]">pode estar vivendo isso:</span>
+              Cuidado médico para quem já tentou de tudo e ainda não se sente{" "}
+              <span className="text-[#2D5A3D]">bem</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
             <p className="text-lg text-[#4A4A4A] leading-relaxed">
               Esses padrões não são falta de disciplina. São sinais de um
-              funcionamento mental intenso que precisa ser compreendido.
+              funcionamento mental intenso que precisa ser compreendido por quem
+              entende do assunto.
             </p>
           </ScrollReveal>
         </div>
@@ -135,7 +136,7 @@ export function Identification() {
               rel="noopener noreferrer"
               className="bg-[#C9A962] hover:bg-[#B8984F] text-[#1A1A1A] px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-300 inline-flex items-center gap-2 whitespace-nowrap"
             >
-              Entender Meu Caso
+              Quero entender meu caso
             </a>
           </div>
         </ScrollReveal>

@@ -33,12 +33,11 @@ export function Hero() {
               className="mb-6"
             >
               <span className="inline-block text-xs sm:text-sm font-medium tracking-[0.25em] text-[#4A7C5C] uppercase mb-6">
-                Atendimento Médico para Mentes Intensas
+                Atendimento Médico Especializado
               </span>
               <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#1A1A1A] leading-[1.15] tracking-tight">
-                Quando a mente nunca{" "}
-                <span className="text-[#2D5A3D]">desacelera</span>, o sofrimento
-                se torna invisível
+                Você não precisa continuar vivendo em estado de{" "}
+                <span className="text-[#2D5A3D]">exaustão</span>
               </h1>
             </motion.div>
 
@@ -48,12 +47,8 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.4, 0, 0.2, 1] }}
               className="text-base sm:text-lg lg:text-xl text-[#4A4A4A] leading-relaxed mb-4"
             >
-              Atendimento médico especializado em adultos e crianças com{" "}
-              <strong className="text-[#1A1A1A] font-medium">
-                altas habilidades, intensidade emocional, ansiedade persistente e
-                insônia
-              </strong>
-              .
+              Tratamentos individualizados com escuta humanizada, ciência e
+              cannabis medicinal quando clinicamente indicada.
             </motion.p>
 
             <motion.p
@@ -62,8 +57,10 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.4, ease: [0.4, 0, 0.2, 1] }}
               className="text-base sm:text-lg text-[#7A7A7A] leading-relaxed mb-10"
             >
-              Uma abordagem que entende a intensidade mental — e que não tenta
-              suprimir o que deveria ser compreendido.
+              Atendimento médico para adultos e crianças com altas habilidades,
+              ansiedade persistente, insônia e intensidade emocional. Cada
+              paciente carrega uma história clínica única — e cada tratamento
+              começa com escuta verdadeira.
             </motion.p>
 
             <motion.div
@@ -99,7 +96,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <Image 
                 src="/images/hero_alt_2.png" 
-                alt="Profissional com clareza mental" 
+                alt="Dr. Anderson Holzwarth" 
                 fill 
                 className="object-cover"
                 priority
@@ -107,7 +104,6 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#2D5A3D]/20 to-transparent"></div>
             </div>
             
-            {/* Decoração sutil */}
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-[#C9A962]/20 rounded-full blur-2xl"></div>
             <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#4A7C5C]/20 rounded-full blur-3xl"></div>
           </motion.div>
@@ -121,7 +117,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <button
-          onClick={() => scrollToSection("#ahsd")}
+          onClick={() => scrollToSection("#identificacao")}
           className="flex flex-col items-center text-[#7A7A7A] hover:text-[#2D5A3D] transition-colors"
           aria-label="Rolar para baixo"
         >
